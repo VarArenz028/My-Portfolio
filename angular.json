@@ -28,9 +28,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "../node_modules/animated.css/animate.css"
+              "node_modules/animate.css/animate.css"
             ],
-            "scripts": ["../node_modules/wowjs/dist/wow.js"]
+            "scripts": ["node_modules/wowjs/dist/wow.min.js"]
           },
           "configurations": {
             "production": {
