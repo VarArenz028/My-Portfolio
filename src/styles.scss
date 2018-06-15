@@ -5,9 +5,19 @@
 
 *
 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans',
+                 'Lucida Sans Regular', 
+                 'Lucida Grande', 
+                 'Lucida Sans Unicode',
+                  Geneva,
+                  Verdana,
+                  sans-serif;
 }
-
+.wrapper
+{
+    width: 90%;
+    margin: 0px 5%;
+}
 #mainNav
 {
     background: #fff;
@@ -32,8 +42,27 @@
         }
     }
 }
-h1
+.content-header
 {
     color: $primaryDarkcolor;
+    text-align: center;
 }
 
+.homePara
+{
+    width: 80%;
+    margin: 0px 10%;
+    p
+    {
+        font-size: 150%;
+        color: $primaryDarkcolor;
+    }
+}
+.head-jumb
+{
+    background: $primaryGreen;
+}
+.view-button
+{
+    @include viewButton;
+}

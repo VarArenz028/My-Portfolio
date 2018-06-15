@@ -7,3 +7,13 @@
         clear: both;
     }
 }
+@mixin viewButton
+{
+    background: #1dd1a1;
+    border: 1px solid #10ac84;
+    &:hover
+    {
+        border: 1px solid #1dd1a1;
+        background: darken(#1dd1a1, 3);
+    }
+}
