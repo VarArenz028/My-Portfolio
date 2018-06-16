@@ -1,3 +1,16 @@
+<section class = "banner-container">
+    <img src = "../../../assets/imgs/banner.jpg" alt = "Banner">
+    <div class="jumbotron jumbotron-fluid banner-jumb">
+        <div class = "banner-wrapper">
+            <div class = "banner-title">
+              <h1>Hello, I'm Var Arenz Villarino</h1>
+              <h1>I'm a Web Developer</h1>
+            </div>
+            <button type="button" class="btn btn-light" routerLink = "/projects" style = "background: transparent; color: #fff;">View my works</button>
+        </div>
+    </div>
+</section>
+
 <div class="jumbotron jumbotron-fluid head-jumb">
   <div class="container">
     <div class = "homePara">
@@ -129,6 +142,13 @@
                 </div>
             </li>
 
+            <li class = "col-lg-2 col-3 mb-3">
+                <div>
+                    <img src="../../../assets/icons/mybatis.png" class = "img-fluid" alt="...">
+                    <span class = "dev-tools-title">Mybatis</span>
+                </div>
+            </li>
+
 
         </div>
 
@@ -142,72 +162,23 @@
 <div class = "wrapper mb-5">
     <div class = "row justify-content-lg-center mt-3">
 
-        <div class = "col-lg-6 col-md-6 col-sm-6 mb-4">
+        <div class = "col-lg-6 col-md-12 col-sm-12 mb-4" *ngFor = "let project of projects">
 
             <div class="card" style="width: 100%;">
                 <div class = "image-wrapper">
-                     <img class="card-img-top projImg" src="../../../assets/imgs/illustration.jpg" alt="Card image cap">
+                     <img class="card-img-top projImg" [src]="project.image" alt="Card image cap">
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">{{project.title}}</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary view-button">View Details</button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
-
-            <div class="card" style="width: 100%;">
-                <div class = "image-wrapper">
-                     <img class="card-img-top projImg" src="../../../assets/imgs/illustration.jpg" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-primary view-button">View Details</button>
-                </div>
-            </div>
-
-        </div>
-
-
-    </div>
-
-     <div class = "row justify-content-lg-center mt-3">
-
-        <div class = "col-lg-6 col-md-6 col-sm-6 mb-4">
-
-            <div class="card" style="width: 100%;">
-                <div class = "image-wrapper">
-                     <img class="card-img-top projImg" src="../../../assets/imgs/illustration.jpg" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <button type="button" class="btn btn-primary view-button">View Details</button>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
-
-            <div class="card" style="width: 100%;">
-                <div class = "image-wrapper">
-                     <img class="card-img-top projImg" src="../../../assets/imgs/illustration.jpg" alt="Card image cap">
-                </div>
-                <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <button type="button" class="btn btn-primary view-button">View Details</button>
+                    <button type="button" (click) = "viewProject(project.title)" class="btn btn-primary view-button">View Details</button>
                 </div>
             </div>
 
         </div>
 
     </div>
+
 </div>
 
 
