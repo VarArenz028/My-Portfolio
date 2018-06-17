@@ -14,22 +14,22 @@ export class ProjectsComponent implements OnInit {
     {
       'id' : 1,
       'title': 'An Intranet Employee Portal For Sterling Global Call Center',
-      'image': '../../../assets/imgs/illustration.jpg'
+      'image': '../../../assets/imgs/intranetPortal/dashboard.JPG'
     },
     {
       'id' : 2,
       'title': 'A Resource Center Website for Information Systems Students in New Era University',
-      'image': '../../../assets/imgs/illustration.jpg'
+      'image': '../../../assets/imgs/isplanning/home.JPG'
     },
     {
       'id' : 3,
       'title': 'A Online Shopping Website for Woman Fashion(Delux)',
-      'image': '../../../assets/imgs/illustration.jpg'
+      'image': '../../../assets/imgs/pizza/pizzamenu.JPG'
     },
     {
       'id' : 4,
-      'title': 'Intranet Employee Portal Intranet Employee Portal Intranet Employee Portal',
-      'image': '../../../assets/imgs/illustration.jpg'
+      'title': 'Slice n Dine a static Restaurant Website',
+      'image': '../../../assets/imgs/pizza/pizzamenu.JPG'
     },
   ]
 

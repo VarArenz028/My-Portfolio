@@ -172,5 +172,9 @@
 .carousel-container
 {
     width: 80%;
-    margin: 0px 10%;
+    margin: 20px 10%;
+    .slide-label
+    {
+        color: #2C3A47;
+    }
 }
