@@ -1,8 +1,20 @@
+@media screen and (max-width: 340px) 
+{
+    .banner-container
+    {
+        .banner-jumb
+        {
+            margin-top: 0px;
+            top: -2% !important;
+        }
+    }
+}
 @media screen and (max-width: 535px) 
 {
+   
     .webToolsBox
     {
-      li
+      .list-icon-box
       {
           div
           {
@@ -33,6 +45,13 @@
     }
 }
 
+@media screen and (max-width: 768px) 
+{
+    // .banner-container
+    // {
+    //     height: 600px !important;
+    // }
+}
 
 @media screen and (max-width: 844px) 
 {
@@ -47,39 +66,38 @@
 }
 @media screen and (max-width: 939px) 
 {
-    .banner-container
-    {
-        .banner-jumb
-        {
-            .banner-wrapper
-            {
-                .banner-title
-                {
-                    h1
-                    {
-                        // font-size: 250% !important;
-                    }
-                }
-            }
-        }
-    }
+    
 }
 @media screen and (max-width: 1078px)
 {
-    .banner-container
+   
+}
+.title 
+{
+    font-size: 4rem;
+}
+.homePara
+{
+    width: 80%;
+    margin: 0px 10%;
+    p
     {
-        .banner-jumb
+        font-size: calc(0.1rem + 2.2vw);
+        color: $primaryDarkcolor;
+    }
+}
+@media (max-width: 1200px) 
+{
+    .title
+    {
+        font-size: calc(1rem + 3.2vw);
+    }
+    .homePara
+    {
+        p
         {
-            .banner-wrapper
-            {
-                .banner-title
-                {
-                    h1
-                    {
-                        // font-size: 350% !important;
-                    }
-                }
-            }
+            font-size: calc(0.4rem + 2.2vw);
+            color: $primaryDarkcolor;
         }
     }
 }
