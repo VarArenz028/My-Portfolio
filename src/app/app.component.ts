@@ -9,7 +9,7 @@ import { RouterOutlet } from '@angular/router';
   animations: [routerTransition]
 })
 export class AppComponent {
-  title = 'app';
+  title = 'test';
 
 
   getAnimationData(routerOutlet : RouterOutlet)
