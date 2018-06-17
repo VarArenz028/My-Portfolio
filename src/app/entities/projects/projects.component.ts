@@ -19,12 +19,12 @@ export class ProjectsComponent implements OnInit {
     {
       'id' : 2,
       'title': 'A Resource Center Website for Information Systems Students in New Era University',
-      'image': '../../../assets/imgs/isplanning/home.JPG'
+      'image': '../../../assets/imgs/isplanning/subjects.JPG'
     },
     {
       'id' : 3,
       'title': 'A Online Shopping Website for Woman Fashion(Delux)',
-      'image': '../../../assets/imgs/pizza/pizzamenu.JPG'
+      'image': '../../../assets/imgs/delux/home.JPG'
     },
     {
       'id' : 4,
